@@ -1,0 +1,33 @@
+.health-ring-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.health-ring-svg {
+  overflow: visible;
+  filter: drop-shadow(0 4px 24px rgba(0,0,0,0.3));
+}
+
+.health-ring-labels {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  text-align: center;
+}
+
+.health-ring-label {
+  font-size: var(--font-base);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.health-ring-sublabel {
+  font-size: var(--font-xs);
+  color: var(--text-muted);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
