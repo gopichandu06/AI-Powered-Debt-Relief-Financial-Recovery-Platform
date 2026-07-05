@@ -8,7 +8,7 @@
 .auth-brand-panel {
   flex: 0 0 480px;
   position: relative;
-  background: linear-gradient(135deg, #0d0f1a 0%, #0f1020 40%, #12103a 100%);
+  background: linear-gradient(135deg, #08131e 0%, #11263d 45%, #163b4e 100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -172,7 +172,7 @@
   align-items: center;
   justify-content: center;
   padding: var(--space-xl);
-  background: var(--bg-primary);
+  background: linear-gradient(180deg, rgba(7, 19, 31, 0.96), rgba(7, 19, 31, 1));
 }
 
 .auth-form-card {
@@ -181,6 +181,12 @@
   display: flex;
   flex-direction: column;
   gap: var(--space-xl);
+  padding: var(--space-xl);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-xl);
+  background: rgba(8, 23, 35, 0.82);
+  box-shadow: var(--shadow-lg);
+  backdrop-filter: blur(16px);
 }
 
 .auth-form-header {

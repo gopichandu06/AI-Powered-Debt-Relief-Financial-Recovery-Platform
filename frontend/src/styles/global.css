@@ -14,6 +14,8 @@ html {
 body {
   font-family: var(--font-family);
   background-color: var(--bg-primary);
+  background-image: var(--gradient-mesh), linear-gradient(180deg, rgba(255,255,255,0.03), transparent);
+  background-attachment: fixed;
   color: var(--text-primary);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
@@ -35,7 +37,7 @@ ul, ol { list-style: none; }
 
 /* ─── Selection ─── */
 ::selection {
-  background: rgba(99, 102, 241, 0.3);
+  background: rgba(45, 212, 191, 0.24);
   color: var(--text-primary);
 }
 
@@ -62,16 +64,18 @@ ul, ol { list-style: none; }
 
 /* ─── Card ─── */
 .card {
-  background: var(--bg-secondary);
+  background: var(--gradient-card);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-lg);
   padding: var(--space-xl);
-  transition: border-color var(--transition-base), box-shadow var(--transition-base);
+  box-shadow: var(--shadow-sm);
+  transition: border-color var(--transition-base), box-shadow var(--transition-base), transform var(--transition-base);
 }
 
 .card:hover {
-  border-color: rgba(255, 255, 255, 0.12);
+  border-color: var(--border-accent);
   box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
 }
 
 .card-glass {
@@ -81,6 +85,7 @@ ul, ol { list-style: none; }
   border: 1px solid var(--border-color);
   border-radius: var(--radius-lg);
   padding: var(--space-xl);
+  box-shadow: var(--shadow-sm);
 }
 
 /* ─── Buttons ─── */
@@ -109,10 +114,10 @@ ul, ol { list-style: none; }
 .btn-primary {
   background: var(--gradient-primary);
   color: #fff;
-  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+  box-shadow: 0 10px 24px rgba(45, 212, 191, 0.24);
 }
 .btn-primary:hover {
-  box-shadow: 0 6px 20px rgba(99, 102, 241, 0.5);
+  box-shadow: 0 12px 30px rgba(45, 212, 191, 0.34);
   transform: translateY(-1px);
 }
 .btn-primary:active { transform: translateY(0); }
